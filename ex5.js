@@ -1,8 +1,16 @@
-// 5. Criando uma nova lista com ingredientes específicos
-let alimentos = ["Arroz", "Feijão", "Batata", "Macarrão", "Carne"];
 
-// Criando uma nova lista com "Feijão" e "Batata"
-let ingredientesNecessarios = ["Feijão", "Batata"];
+const prompt = require("prompt-sync")();
 
-// Exibindo o resultado
-console.log("Ingredientes necessários:", ingredientesNecessarios);
+let numeroAleatorio = Math.floor(Math.random() * 10);
+let contador = 1
+
+
+while (contador <= 5) {
+    entrada = Number(prompt("Digite um número entre 1 e 10: "));
+    if(entrada == numeroAleatorio){
+        console.log(`Parabens você acertou o numero`)
+    } else{
+        console.log(`que pena você errou a sua tentativa ${contador}`)
+        contador++;
+    }
+  } 
